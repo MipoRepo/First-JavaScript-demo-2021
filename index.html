@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BOOTCAMP 2021</title>
+</head>
+
+<body>   
+    <div class="container">
+        
+        <!--Navigation-->
+        <div class="nav-wrap">
+            <div class="lef-side">
+                <div class="navlink-wrap">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="navlink-wrap">
+                <a href="about.html">About</a>
+                </div>
+                
+
+            </div>
+        <!--Text on right-->
+            <div class="right-side"></div>
+                <div class="work-name">
+                    <div>CODE BOOTCAMP 2021</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Bottom content-->
+        <div class="content-wrap">
+            <div class="content-items-wrap">
+                
+                <!--1.item-->
+                <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/1.jpg)"></div>
+                    
+                    <div class="img-txt-wrap">
+                        
+                        <div class="subtit">
+                            1 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--2.item-->
+                <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/3.jpg)"></div>
+                
+                    <div class="img-txt-wrap">
+                        
+                        <div class="subtit">
+                            2 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--3.item-->
+                <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/2.jpg)"></div>
+                
+                    <div class="img-txt-wrap">
+                        
+                        <div class="subtit">
+                            3 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--4.item-->
+                <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/4.jpg)"></div>
+                
+                    <div class="img-txt-wrap">
+
+                        <div class="subtit">
+                            4 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--5.item-->
+              <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/6.jpg)"></div>
+                
+                    <div class="img-txt-wrap">
+                       
+                        <div class="subtit">
+                            6 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--6.item-->
+                <div class="content-item-wrap">
+                    <div class="content-img-background" style="background-image:url(images/5.jpg)"></div>
+                
+                    <div class="img-txt-wrap">
+                       
+                        <div class="subtit">
+                            6 Building 
+                        </div>
+                    </div>
+                </div>
+
+                <!--end of items-->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // Event listener for mouse, actiond image on/off
+    const contItems = document.querySelectorAll('.content-item-wrap');
+
+        contItems.forEach(contItem => {
+            contItem.addEventListener('mouseover', () => {
+                console.log(contItem.childNodes[1].classList)
+                contItem.childNodes[1].classList.add('image-blur');
+            });
+
+            contItem.addEventListener('mouseout', () => {
+                console.log(contItem.childNodes[1].classList)
+                contItem.childNodes[1].classList.remove('image-blur');
+            });
+        });
+ 
+    
+</script>
+
+</html>
