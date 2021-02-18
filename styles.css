@@ -108,8 +108,13 @@ body {
   color: #8a8a8a;
 }
 
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .profile-image-wrapper img {
-  height: 350px;
+  height: 100%;
   width: 100%;
 }
 
@@ -117,6 +122,6 @@ body {
   padding: 30px;
 }
 
-.profile-content-wrapper h1 {
+.profile-content-wrapper h3 {
   color: lightseagreen;
 }
